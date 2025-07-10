@@ -194,12 +194,14 @@ h4 {
 }
 
 /* Set table to display under heading and text in 'Services' section */
+.main-dark#roster,
 .main-dark#services {
 	display: flex;
 	flex-direction: column;
 }
 
 /* Style sub text in 'Services' section */
+#roster p,
 #services p {
 	text-align: center;
 }
