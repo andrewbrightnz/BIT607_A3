@@ -1,9 +1,3 @@
-/* REMEMBER TO MINIFY ME BEFORE SUBMITTING */
-/* REMEMBER TO MINIFY ME BEFORE SUBMITTING */
-/* REMEMBER TO MINIFY ME BEFORE SUBMITTING */
-/* REMEMBER TO MINIFY ME BEFORE SUBMITTING */
-/* REMEMBER TO MINIFY ME BEFORE SUBMITTING */
-
 /* For the whole site: make jumps to links/boomarks smooth, and Style text colour to dark grey */
 html {
 	scroll-behavior: smooth;
@@ -172,7 +166,7 @@ h4 {
 }
 
 .main-light h2 {
-	text-align: center;
+	text-align: center !important;
 	color: rgb(70, 70, 70);
 }
 
@@ -397,5 +391,9 @@ td {
 }
 
 #hiddentext {
-	color: grey !important;
+	padding-bottom: 25px;
+}
+
+#hiddentext a {
+	color: lightgray;
 }
