@@ -1,0 +1,31 @@
+body {
+	max-width: 1000px;
+	margin: auto;
+}
+img {
+	max-width: 100px;
+	max-height: 100px%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Gloria Hallelujah", sans-serif;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+}
+
+table {
+	width: 100%;
+}
+td {
+	padding: 8px;
+}
+.footer {
+	padding: 16px;
+	font-size: 0.9em;
+	text-align: center;
+}
