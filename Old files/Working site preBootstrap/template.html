@@ -17,70 +17,81 @@
 	</head>
 
 	<body>
-		<!-- Build header background -->
-		<header class="header-background">
-			<div class="header-text">
-				<h1>&#128062; Snazzy Dog Grooming - TEMPLATE</h1>
-				<!-- Build login fields -->
-				<div class="login-form">
-					<form action="/login_page.php">
-						<label for="username">Username:</label>
+		<div class="w3-content">
+			<div class="w3-container">
+				<!-- Build header background -->
+				<header class="header-background">
+					<div class="header-text">
+						<h1>&#128062; Snazzy Dog Grooming - TEMPLATE</h1>
+						<!-- Build login fields -->
+						<div class="login-form">
+							<form action="/login_page.php">
+								<label for="username">Username:</label>
+								<input
+									type="text"
+									id="username"
+									name="username"
+									placeholder="Snoop Dogg"
+								/><br />
+								<label for="password">Password:</label>
+								<input
+									type="text"
+									id="password"
+									name="password"
+									placeholder="Password"
+								/><br />
+								<input type="submit" value="Login" />
+							</form>
+						</div>
+					</div>
+				</header>
+			</div>
+
+			<div class="w3-container">
+				<!-- Build nav bar -->
+				<nav class="topnav">
+					<a class="current-page" href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="booking.html">Booking</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="contact.html">Contact</a>
+					<a href="location.html">Location</a>
+					<!-- Build search field -->
+					<div>
+						<span class="search-label">Search:</span>
 						<input
 							type="text"
-							id="username"
-							name="username"
-							placeholder="Snoop Dogg"
-						/><br />
-						<label for="password">Password:</label>
-						<input
-							type="text"
-							id="password"
-							name="password"
-							placeholder="Password"
-						/><br />
-						<input type="submit" value="Login" />
-					</form>
+							placeholder="Enter search term here"
+							aria-label="Search the site"
+						/>
+					</div>
+				</nav>
+			</div>
+
+			<div class="w3-container">
+				<div class="new section">
+					<h2>New section goes here</h2>
+			</div>
+
+			<div class="w3-container">
+				<!-- Footer contains opening hours and copyright notice -->
+				<div class="footer">
+					<span>We're open:</span>
+					<span>9–5 Monday to Saturday,</span>
+					<span>but we're closed on public holidays.</span>
+					<span>&copy; 2025 Snazzy Dog Grooming</span>
+				</div>
+				<div class="footer" id="hiddentext">
+
+				<span><a href="privacy.html">Privacy policy</a></span>
+				<span
+					><a href="/staffonly/roster.html"
+						>Staff roster (login required)</a
+					></span
+				>
+
 				</div>
 			</div>
-		</header>
-
-		<!-- Build nav bar -->
-		<nav class="topnav">
-			<a class="current-page" href="index.html">Home</a>
-			<a href="services.html">Services</a>
-			<a href="booking.html">Booking</a>
-			<a href="gallery.html">Gallery</a>
-			<a href="contact.html">Contact</a>
-			<a href="location.html">Location</a>
-			<!-- Build search field -->
-			<div>
-				<span class="search-label">Search:</span>
-				<input
-					type="text"
-					placeholder="Enter search term here"
-					aria-label="Search the site"
-				/>
-			</div>
-		</nav>
-
-		<div class="new section">
-			<h2>New section goes here</h2>
-		</div>
-
-		<!-- Footer contains opening hours and copyright notice -->
-		<div class="footer">
-			<span>We're open:</span>
-			<span>9–5 Monday to Saturday,</span>
-			<span>but we're closed on public holidays.</span>
-			<span>&copy; 2025 Snazzy Dog Grooming</span>
-		</div>
-		<div class="footer" id="hiddentext">
-			<span><a href="privacy.html">Privacy policy</a></span>
-			<span
-				><a href="/staffonly/roster.html"
-					>Staff roster (login required)</a
-				></span
-			>
 		</div>
 	</body>
 </html>
