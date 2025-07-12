@@ -11,7 +11,7 @@
 		/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<!-- Retain a link to my css stylesheet in case I need to make very specific overrides -->
-		<link rel="stylesheet" href="styles.css" />
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
 
 		<title>&#128062; Snazzy Dog Grooming - TEMPLATE</title>
 	</head>
@@ -57,55 +57,55 @@
 				</div>
 				<!-- </div> -->
 			</header>
-		</div>
 
-		<div class="w3-container">
-			<nav class="w3-bar w3-brown">
-				<!-- Left side nav links -->
-				<div class="w3-bar-item" style="width: 66%">
-					<a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
-					<a href="services.html" class="w3-bar-item w3-button">Services</a>
-					<a href="booking.html" class="w3-bar-item w3-button">Booking</a>
-					<a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-					<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-					<a href="location.html" class="w3-bar-item w3-button">Location</a>
-				</div>
+			<!-- Build navbar -->
+			<div class="w3-container">
+				<nav class="w3-bar w3-brown">
+					<!-- Left side nav links -->
+					<div class="w3-bar-item" style="width: 66%">
+						<a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+						<a href="services.html" class="w3-bar-item w3-button">Services</a>
+						<a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+						<a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+						<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+						<a href="location.html" class="w3-bar-item w3-button">Location</a>
+					</div>
 
-				<!-- Right side search -->
-				<div class="w3-bar-item w3-right" style="width: 33%">
-					<span class="w3-margin-right">Search:</span>
-					<input
-						type="text"
-						class="w3-input w3-border"
-						style="display: inline-block; width: 60%"
-						placeholder="Search..."
-					/>
-				</div>
-			</nav>
-		</div>
+					<!-- Right side search -->
+					<div class="w3-bar-item w3-right" style="width: 33%">
+						<span class="w3-margin-right">Search:</span>
+						<input
+							type="text"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 60%"
+							placeholder="Search..."
+						/>
+					</div>
+				</nav>
+			</div>
 
-		<div class="w3-container">
-			<div class="new section">
+			<!-- Build content section eg Services/Booking/Location-->
+			<div class="w3-container">
 				<h2>New section goes here</h2>
 			</div>
 
-			<div class="w3-container">
-				<!-- Footer contains opening hours and copyright notice -->
-				<div class="footer">
-					<span>We're open:</span>
-					<span>9–5 Monday to Saturday,</span>
-					<span>but we're closed on public holidays.</span>
-					<span>&copy; 2025 Snazzy Dog Grooming</span>
-				</div>
-				<div class="footer" id="hiddentext">
-					<span><a href="privacy.html">Privacy policy</a></span>
-					<span
-						><a href="/staffonly/roster.html"
-							>Staff roster (login required)</a
-						></span
+			<!-- Build footer -->
+			<!-- Footer -->
+			<footer
+				class="w3-container w3-light-grey w3-center w3-small w3-padding-16 w3-border-top"
+			>
+				<p>
+					<b>We're open:</b> 9–5 Monday to Saturday, but closed on public
+					holidays
+				</p>
+				<p>&copy; 2025 Snazzy Dog Grooming</p>
+				<p>
+					<a href="privacy.html" class="w3-hover-text-blue">Privacy policy</a> |
+					<a href="/staffonly/roster.html" class="w3-hover-text-blue"
+						>Staff roster</a
 					>
-				</div>
-			</div>
+				</p>
+			</footer>
 		</div>
 	</body>
 </html>
