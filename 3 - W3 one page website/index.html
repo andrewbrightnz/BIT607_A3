@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- Boilerplate code -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Link to Google Fonts to use them in my website -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- Retain a link to my css stylesheet in case I need to make very specific overrides -->
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
+
+		<title>&#128062; Snazzy Dog Grooming</title>
+	</head>
+
+	<body>
+		<!-- Put whole site in a padded 980px width container (W3-content)-->
+		<div class="w3-content">
+			<!-- Build header -->
+			<header class="w3-container">
+				<!-- Left: Header text (2/3 width) -->
+				<div
+					class="w3-twothird"
+					style="display: flex; align-items: center; height: 150px"
+				>
+					<h1>&#128062; Snazzy Dog Grooming</h1>
+				</div>
+
+				<!-- Right: Login form (1/3 width) -->
+				<form class="w3-third w3-small">
+					<div class="w3-margin-bottom">
+						<label
+							for="username"
+							style="display: inline-block; width: 100px; text-align: right"
+							>Username:</label
+						>
+						<input
+							type="text"
+							id="username"
+							name="username"
+							placeholder="Snoop Dogg"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 200px"
+						/>
+					</div>
+
+					<div class="w3-margin-bottom">
+						<label
+							for="password"
+							style="display: inline-block; width: 100px; text-align: right"
+							>Password:</label
+						>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							placeholder="Password"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 200px"
+						/>
+					</div>
+
+					<input
+						type="submit"
+						value="Login"
+						class="w3-button w3-light-grey"
+						style="margin-left: 100px; width: 200px"
+					/>
+				</form>
+			</header>
+
+			<!-- Build navbar -->
+			<div class="w3-container">
+				<nav class="w3-bar w3-brown">
+					<!-- Left side nav links -->
+					<div class="w3-bar-item" style="width: 66%">
+						<a href="index.html" class="w3-bar-item w3-button">Home</a>
+						<a href="#services" class="w3-bar-item w3-button">Services</a>
+						<a href="#booking" class="w3-bar-item w3-button">Booking</a>
+						<a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+						<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+						<a href="#location" class="w3-bar-item w3-button">Location</a>
+					</div>
+
+					<!-- Right side search -->
+					<div class="w3-bar-item w3-right" style="width: 33%">
+						<span class="w3-margin-right">Search:</span>
+						<input
+							type="text"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 60%"
+							placeholder="Search..."
+						/>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Build ervices section-->
+			<div class="w3-container" id="services">
+				<div>
+					<h2>Services</h2>
+					<p>
+						Snazzy Dog Grooming offers a wide range of services to keep your pet
+						in top condition
+					</p>
+				</div>
+				<div>
+					<!-- Services info is contained within a table with invisible borders -->
+					<table>
+						<tr>
+							<th colspan="3" class="section-heading">
+								<span>Standard Services</span>
+								<hr />
+							</th>
+						</tr>
+						<tr>
+							<!-- Services are in bold (class="service-title") -->
+							<td class="service-title">Bath and brush</td>
+							<td>Shampoo, blow-dry, brush-out and nail trim</td>
+							<td>$25–$50</td>
+						</tr>
+						<tr>
+							<td class="service-title">Haircut</td>
+							<td>
+								Bath, blow-dry, haircut (based on breed standard or owner's
+								preference) and nail trim
+							</td>
+							<td>$45–$85</td>
+						</tr>
+						<tr>
+							<td class="service-title">Nail trim</td>
+							<td>Trim nails and, in some cases, filing</td>
+							<td>$10–$20</td>
+						</tr>
+						<tr>
+							<td class="service-title">Ear cleaning</td>
+							<td>Gentle cleaning of ears to remove wax and debris</td>
+							<td>$10–$15</td>
+						</tr>
+						<tr>
+							<td class="service-title">Teeth brushing</td>
+							<td>Brushing with pet-safe toothpaste</td>
+							<td>$10–$15</td>
+						</tr>
+						<tr>
+							<td class="service-title">Express service</td>
+							<td>For dogs that need minimal grooming or a quick touch-up</td>
+							<td>$15–$25<br />(in addition)</td>
+						</tr>
+						<tr>
+							<td class="service-title">Medicated bath</td>
+							<td>For pets with skin conditions requiring special shampoo.</td>
+							<td>$20–$40<br />(in addition)</td>
+						</tr>
+						<tr>
+							<td class="service-title">Special-breed cuts</td>
+							<td>
+								Breed-specific cuts or styling based on customer preference
+							</td>
+							<td>Quoted after consultation</td>
+						</tr>
+						<tr>
+							<!-- New sections are introduced with a centered heading and horizontal rule -->
+							<th colspan="3" class="section-heading">
+								<span>Treatments</span>
+								<hr />
+							</th>
+						</tr>
+						<tr>
+							<td class="service-title">De-shedding treatment</td>
+							<td>Special shampoo and undercoat removal</td>
+							<td>$20–$40 <br />(in addition)</td>
+						</tr>
+						<tr>
+							<td class="service-title">Flea and tick treatment</td>
+							<td>Shampoo and preventative treatment</td>
+							<td>$15–$30</td>
+						</tr>
+						<tr>
+							<th colspan="3" class="section-heading">
+								<span>Packages</span>
+								<hr />
+							</th>
+						</tr>
+						<tr>
+							<td class="service-title">Puppy package</td>
+							<td>Introductory grooming services tailored for puppies</td>
+							<td>$30–$60</td>
+						</tr>
+						<tr>
+							<td class="service-title">Senior dog package</td>
+							<td>
+								Grooming services tailored for older dogs, often with special
+								handling and care
+							</td>
+							<td>$40–$80</td>
+						</tr>
+						<tr>
+							<td class="service-title">Full grooming package</td>
+							<td>
+								Comprehensive grooming service, including bath, haircut, teeth
+								brushing, nail trim and ear cleaning
+							</td>
+							<td>$60–$120</td>
+						</tr>
+						<tr>
+							<td class="service-title">Spa package</td>
+							<td>
+								Bath, haircut, teeth brushing, nail trim and sometimes special
+								scents or conditioners
+							</td>
+							<td>$75–$150</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- Build booking section -->
+			<div class="w3-container" id="booking">
+				<div>
+					<h2>Request a booking</h2>
+					<p>
+						Enter your details, and we will be in touch to confirm your booking.
+					</p>
+					<!-- Form has a label, then a field to enter relevant information -->
+					<form action="/request_booking.php" class="booking-form">
+						<label for="owner_name">Owner's name:</label>
+						<input
+							type="text"
+							id="owner_name"
+							name="owner_name"
+							placeholder="Snoop Dogg"
+						/><br />
+						<label for="owner_email">Email address:</label>
+						<input
+							type="text"
+							id="owner_email"
+							name="owner_email"
+							placeholder="me@gmail.com"
+						/><br />
+						<label for="dog_name">Dog's name:</label>
+						<input
+							type="text"
+							id="dog_name"
+							name="dog_name"
+							placeholder="Rex"
+						/><br />
+						<label for="dog_breed">Breed:</label>
+						<select id="breed" name="dog_breed">
+							<option value="labrador">Labrador Retriever</option>
+							<option value="germanshepherd">German Shepherd</option>
+							<option value="goldenretriever">Golden Retriever</option>
+							<option value="bulldog">Bulldog</option>
+							<option value="poodle">Poodle</option>
+							<option value="beagle">Beagle</option>
+							<option value="rottweiler">Rottweiler</option>
+							<option value="dachshund">Dachshund</option>
+							<option value="siberianhusky">Siberian Husky</option>
+							<option value="boxer">Boxer</option>
+							<option value="other">Other</option></select
+						><br />
+						<label for="dog_age">Dog's age:</label>
+						<input
+							type="number"
+							id="dog_age"
+							name="dog_age"
+							placeholder="5"
+						/><br />
+						<label for="owner_notes">Additional Notes:</label>
+						<textarea
+							id="owner_notes"
+							name="owner_notes"
+							maxlength="300"
+							rows="4"
+							placeholder="Enter any extra details here (max 300 characters)"
+						></textarea>
+						<br />
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+
+			<!-- Build navbar -->
+			<div class="w3-container">
+				<nav class="w3-bar w3-brown">
+					<!-- Left side nav links -->
+					<div class="w3-bar-item" style="width: 66%">
+						<a href="index.html" class="w3-bar-item w3-button">Home</a>
+						<a href="#services" class="w3-bar-item w3-button">Services</a>
+						<a href="#booking" class="w3-bar-item w3-button">Booking</a>
+						<a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+						<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+						<a href="#location" class="w3-bar-item w3-button">Location</a>
+					</div>
+
+					<!-- Right side search -->
+					<div class="w3-bar-item w3-right" style="width: 33%">
+						<span class="w3-margin-right">Search:</span>
+						<input
+							type="text"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 60%"
+							placeholder="Search..."
+						/>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Build gallery section -->
+			<div class="w3-container" id="gallery">
+				<div>
+					<h2>Photo gallery</h2>
+					<p>Take a look at some of our very handsome doggy customers!</p>
+					<div class="photo_gallery">
+						<div
+							class="photo_frame photo01"
+							alt="Photo of Rex"
+							title="Rex"
+						></div>
+						<div
+							class="photo_frame photo02"
+							alt="Photo of Murray"
+							title="Murray"
+						></div>
+						<div
+							class="photo_frame photo03"
+							alt="Photo of Buddy"
+							title="Buddy"
+						></div>
+						<div
+							class="photo_frame photo04"
+							alt="Photo of Bella"
+							title="Bella"
+						></div>
+						<div
+							class="photo_frame photo05"
+							alt="Photo of Max"
+							title="Max"
+						></div>
+						<div
+							class="photo_frame photo06"
+							alt="Photo of Daisy"
+							title="Daisy"
+						></div>
+						<div
+							class="photo_frame photo07"
+							alt="Photo of Charlie and Daniel"
+							title="Charlie and Daniel"
+						></div>
+						<div
+							class="photo_frame photo08"
+							alt="Photo of Luna and Terra"
+							title="Luna and Terra"
+						></div>
+						<div
+							class="photo_frame photo09"
+							alt="Photo of Rocky"
+							title="Rocky"
+						></div>
+						<div
+							class="photo_frame photo10"
+							alt="Photo of Molly"
+							title="Molly"
+						></div>
+						<div
+							class="photo_frame photo11"
+							alt="Photo of Duke"
+							title="Duke"
+						></div>
+						<div
+							class="photo_frame photo12"
+							alt="Photo of Sadie and Gregg"
+							title="Sadie and Gregg"
+						></div>
+						<div
+							class="photo_frame photo13"
+							alt="Photo of Toby with his family"
+							title="Toby with his family"
+						></div>
+						<div
+							class="photo_frame photo14"
+							alt="Photo of Bailey"
+							title="Bailey"
+						></div>
+						<div
+							class="photo_frame photo15"
+							alt="Photo of Coco and Rocky"
+							title="Coco and Rocky"
+						></div>
+						<div
+							class="photo_frame photo16"
+							alt="Photo of Spot"
+							title="Spot"
+						></div>
+					</div>
+					<p class="photo_credit">
+						Photos courtesy of:
+						<a href="https://www.pexels.com">Pexels.com </a>
+					</p>
+				</div>
+			</div>
+
+			<!-- Build contact section -->
+			<div class="main-light" id="contact">
+				<h2>Contact us</h2>
+				<div>
+					<p>Fred and Wilma Bedrock</p>
+					<p>Phone: 021-123-4567</p>
+					<p>Address: 89 Lake Domain Drive, Frankton, Hamilton, NEW ZEALAND</p>
+				</div>
+				<h2>Or email us through this form.</h2>
+				<!-- Form has a label, then a field to enter relevant information -->
+				<form action="/contact_us.php" class="booking-form">
+					<label for="contact_name">Name:</label>
+					<input
+						type="text"
+						id="contact_name"
+						name="contact_name"
+						placeholder="Snoop Dogg"
+					/><br />
+					<label for="contact_email">Email address:</label>
+					<input
+						type="text"
+						id="contact_email"
+						name="contact"
+						placeholder="me@gmail.com"
+					/><br />
+					<label for="contact_phone">Phone number:</label>
+					<input
+						type="text"
+						id="contact_phone"
+						name="contact_phone"
+						placeholder="123-456-7890"
+					/><br />
+					<label for="contact_enquiry">Write your question here:</label>
+					<textarea
+						id="contact_enquiry"
+						name="contact_enquiry"
+						maxlength="300"
+						rows="4"
+						placeholder="How can I pay? What if I need to cancel a booking? (max 300 characters)"
+					></textarea>
+					<br />
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+
+			<!-- Build navbar -->
+			<div class="w3-container">
+				<nav class="w3-bar w3-brown">
+					<!-- Left side nav links -->
+					<div class="w3-bar-item" style="width: 66%">
+						<a href="index.html" class="w3-bar-item w3-button">Home</a>
+						<a href="#services" class="w3-bar-item w3-button">Services</a>
+						<a href="#booking" class="w3-bar-item w3-button">Booking</a>
+						<a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+						<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+						<a href="#location" class="w3-bar-item w3-button">Location</a>
+					</div>
+
+					<!-- Right side search -->
+					<div class="w3-bar-item w3-right" style="width: 33%">
+						<span class="w3-margin-right">Search:</span>
+						<input
+							type="text"
+							class="w3-input w3-border"
+							style="display: inline-block; width: 60%"
+							placeholder="Search..."
+						/>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Build location section -->
+			<div class="w3-container" id="location">
+				<h2>How to find us:</h2>
+				<!-- Embed of Google Map - code was supplied by Google -->
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.7456469388426!2d175.26633221300935!3d-37.79600023290881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d220108c35939%3A0x13d4658a53bc4384!2s89%20Lake%20Domain%20Drive%2C%20Frankton%2C%20Hamilton%203204!5e0!3m2!1sen!2snz!4v1751084902607!5m2!1sen!2snz"
+					title="Map showing the location of Snazzy Dog Grooming (89 Lake Domain Drive, Frankton, Hamilton)"
+					width="600"
+					height="450"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+
+			<!-- Build privacy policy section-->
+			<div class="w3-container" id="privacy">
+				<div>
+					<h2>Snazzy Dog Grooming privacy policy</h2>
+					<p>We collect personal information from you, including your:</p>
+					<ul>
+						<li>name</li>
+						<li>contact information</li>
+					</ul>
+					<p>We collect your personal information in order to:</p>
+					<ul>
+						<li>
+							record relevant information about our clients and their pets
+						</li>
+						<li>know how to contact our clients</li>
+					</ul>
+					<p>
+						Providing some information is optional. If you choose not to enter
+						contact information, we'll make do without it - no stress!.
+					</p>
+					<p>
+						We keep your information safe by storing it in password protected
+						accounts and vetting any staff that will access it. We keep your
+						information for six months after we last heard from you,at which
+						point we securely destroy it by securely erasing it.
+					</p>
+					<p>
+						You have the right to ask for a copy of any personal information we
+						hold about you, and to ask for it to be corrected if you think it is
+						wrong.
+					</p>
+					<p>
+						If you’d like to ask for a copy of your information, or to have it
+						corrected, please contact us at:
+					</p>
+					<ul>
+						<li>Email us using <a href="contact.html">this form</a></li>
+						<li>Phone: 021-123-4567</li>
+						<li>
+							Post: 89 Lake Domain Drive, Frankton, Hamilton, NEW ZEALAND.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Build footer -->
+			<footer
+				class="w3-container w3-brown w3-center w3-small w3-padding-16 w3-border-top"
+			>
+				<p>
+					<b>We're open:</b> 9–5 Monday to Saturday, but we're closed on public
+					holidays
+				</p>
+				<p>&copy; 2025 Snazzy Dog Grooming</p>
+
+				<div class="w3-row">
+					<div class="w3-half" style="text-align: right">
+						<p>
+							View our
+							<a href="#privacy" class="w3-hover-text-yellow">Privacy policy</a>
+							&nbsp;|&nbsp;
+						</p>
+					</div>
+					<div class="w3-half" style="text-align: left">
+						<p>
+							<a href="/staffonly/roster.html" class="w3-hover-text-yellow"
+								>Staff roster</a
+							>
+							(login required)
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- W3-content -->
+	</body>
+</html>
