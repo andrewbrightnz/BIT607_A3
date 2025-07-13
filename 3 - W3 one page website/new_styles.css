@@ -1,0 +1,38 @@
+/* For the whole site: make jumps to links/boomarks smooth, and Style text colour to dark grey */
+html {
+	scroll-behavior: smooth;
+	color: rgb(70, 70, 70);
+}
+
+/* Universal box sizing */
+* {
+	box-sizing: border-box;
+}
+
+.header,
+#services,
+#gallery,
+#location,
+#roster {
+	background-color: #e4d4c8;
+}
+
+#booking,
+#contact,
+#privacy {
+	background-color: #d0b49f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Gloria Hallelujah", sans-serif;
+	text-align: center;
+}
+
+p,
+th,
+td {
+	font-family: "Lato", sans-serif;
+}

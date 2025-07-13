@@ -11,7 +11,7 @@
 		/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<!-- Retain a link to my css stylesheet in case I need to make very specific overrides -->
-		<!-- <link rel="stylesheet" href="styles.css" /> -->
+		<link rel="stylesheet" href="new_styles.css" />
 
 		<title>&#128062; Snazzy Dog Grooming</title>
 	</head>
@@ -19,8 +19,8 @@
 	<body>
 		<!-- Put whole site in a padded 980px width container (W3-content)-->
 		<div class="w3-content">
-			<!-- Build header -->
-			<header class="w3-container">
+			<!-- Header -->
+			<header class="w3-container" id="header">
 				<!-- Left: Header text (2/3 width) -->
 				<div
 					class="w3-twothird"
@@ -72,33 +72,31 @@
 				</form>
 			</header>
 
-			<!-- Build navbar -->
-			<div class="w3-container">
-				<nav class="w3-bar w3-brown">
-					<!-- Left side nav links -->
-					<div class="w3-bar-item" style="width: 66%">
-						<a href="index.html" class="w3-bar-item w3-button">Home</a>
-						<a href="#services" class="w3-bar-item w3-button">Services</a>
-						<a href="#booking" class="w3-bar-item w3-button">Booking</a>
-						<a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
-						<a href="#contact" class="w3-bar-item w3-button">Contact</a>
-						<a href="#location" class="w3-bar-item w3-button">Location</a>
-					</div>
+			<!-- Navbar -->
+			<nav class="w3-bar w3-brown">
+				<!-- Left side nav links -->
+				<div class="w3-bar-item" style="width: 66%">
+					<a href="index.html" class="w3-bar-item w3-button">Home</a>
+					<a href="#services" class="w3-bar-item w3-button">Services</a>
+					<a href="#booking" class="w3-bar-item w3-button">Booking</a>
+					<a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+					<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+					<a href="#location" class="w3-bar-item w3-button">Location</a>
+				</div>
 
-					<!-- Right side search -->
-					<div class="w3-bar-item w3-right" style="width: 33%">
-						<span class="w3-margin-right">Search:</span>
-						<input
-							type="text"
-							class="w3-input w3-border"
-							style="display: inline-block; width: 60%"
-							placeholder="Search..."
-						/>
-					</div>
-				</nav>
-			</div>
+				<!-- Right side search -->
+				<div class="w3-bar-item w3-right" style="width: 33%">
+					<span class="w3-margin-right">Search:</span>
+					<input
+						type="text"
+						class="w3-input w3-border"
+						style="display: inline-block; width: 60%"
+						placeholder="Search..."
+					/>
+				</div>
+			</nav>
 
-			<!-- Build ervices section-->
+			<!-- Services-->
 			<div class="w3-container" id="services">
 				<div>
 					<h2>Services</h2>
@@ -218,7 +216,7 @@
 				</div>
 			</div>
 
-			<!-- Build booking section -->
+			<!-- Booking -->
 			<div class="w3-container" id="booking">
 				<div>
 					<h2>Request a booking</h2>
@@ -283,7 +281,7 @@
 				</div>
 			</div>
 
-			<!-- Build navbar -->
+			<!-- Navbar -->
 			<div class="w3-container">
 				<nav class="w3-bar w3-brown">
 					<!-- Left side nav links -->
@@ -309,7 +307,7 @@
 				</nav>
 			</div>
 
-			<!-- Build gallery section -->
+			<!-- Gallery -->
 			<div class="w3-container" id="gallery">
 				<div>
 					<h2>Photo gallery</h2>
@@ -403,7 +401,7 @@
 				</div>
 			</div>
 
-			<!-- Build contact section -->
+			<!-- Contact -->
 			<div class="main-light" id="contact">
 				<h2>Contact us</h2>
 				<div>
@@ -448,7 +446,7 @@
 				</form>
 			</div>
 
-			<!-- Build navbar -->
+			<!-- Navbar -->
 			<div class="w3-container">
 				<nav class="w3-bar w3-brown">
 					<!-- Left side nav links -->
@@ -474,7 +472,7 @@
 				</nav>
 			</div>
 
-			<!-- Build location section -->
+			<!-- Location -->
 			<div class="w3-container" id="location">
 				<h2>How to find us:</h2>
 				<!-- Embed of Google Map - code was supplied by Google -->
@@ -489,7 +487,7 @@
 				></iframe>
 			</div>
 
-			<!-- Build privacy policy section-->
+			<!-- Privacy policy-->
 			<div class="w3-container" id="privacy">
 				<div>
 					<h2>Snazzy Dog Grooming privacy policy</h2>
@@ -534,7 +532,7 @@
 				</div>
 			</div>
 
-			<!-- Build footer -->
+			<!-- Footer -->
 			<footer
 				class="w3-container w3-brown w3-center w3-small w3-padding-16 w3-border-top"
 			>

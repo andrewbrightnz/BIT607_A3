@@ -11,7 +11,7 @@
 		/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<!-- Retain a link to my css stylesheet in case I need to make very specific overrides -->
-		<!-- <link rel="stylesheet" href="styles.css" /> -->
+		<link rel="stylesheet" href="../new_styles.css" />
 
 		<title>&#128062; Snazzy Dog Grooming - Staff roster</title>
 	</head>
@@ -19,8 +19,8 @@
 	<body>
 		<!-- Put whole site in a padded 980px width container (W3-content)-->
 		<div class="w3-content">
-			<!-- Build header -->
-			<header class="w3-container">
+			<!-- Header -->
+			<header class="w3-container" id="header">
 				<!-- Left: Header text (2/3 width) -->
 				<div
 					class="w3-twothird"
@@ -72,43 +72,41 @@
 				</form>
 			</header>
 
-			<!-- Build navbar -->
-			<div class="w3-container">
-				<nav class="w3-bar w3-brown">
-					<!-- Left side nav links -->
-					<div class="w3-bar-item" style="width: 66%">
-						<a href="../index.html#home" class="w3-bar-item w3-button">Home</a>
-						<a href="../index.html#services" class="w3-bar-item w3-button"
-							>Services</a
-						>
-						<a href="../index.html#booking" class="w3-bar-item w3-button"
-							>Booking</a
-						>
-						<a href="../index.html#gallery" class="w3-bar-item w3-button"
-							>Gallery</a
-						>
-						<a href="../index.html#contact" class="w3-bar-item w3-button"
-							>Contact</a
-						>
-						<a href="../index.html#location" class="w3-bar-item w3-button"
-							>Location</a
-						>
-					</div>
+			<!-- Navbar -->
+			<nav class="w3-bar w3-brown">
+				<!-- Left side nav links -->
+				<div class="w3-bar-item" style="width: 66%">
+					<a href="../index.html#home" class="w3-bar-item w3-button">Home</a>
+					<a href="../index.html#services" class="w3-bar-item w3-button"
+						>Services</a
+					>
+					<a href="../index.html#booking" class="w3-bar-item w3-button"
+						>Booking</a
+					>
+					<a href="../index.html#gallery" class="w3-bar-item w3-button"
+						>Gallery</a
+					>
+					<a href="../index.html#contact" class="w3-bar-item w3-button"
+						>Contact</a
+					>
+					<a href="../index.html#location" class="w3-bar-item w3-button"
+						>Location</a
+					>
+				</div>
 
-					<!-- Right side search -->
-					<div class="w3-bar-item w3-right" style="width: 33%">
-						<span class="w3-margin-right">Search:</span>
-						<input
-							type="text"
-							class="w3-input w3-border"
-							style="display: inline-block; width: 60%"
-							placeholder="Search..."
-						/>
-					</div>
-				</nav>
-			</div>
+				<!-- Right side search -->
+				<div class="w3-bar-item w3-right" style="width: 33%">
+					<span class="w3-margin-right">Search:</span>
+					<input
+						type="text"
+						class="w3-input w3-border"
+						style="display: inline-block; width: 60%"
+						placeholder="Search..."
+					/>
+				</div>
+			</nav>
 
-			<!-- Build roster section -->
+			<!-- Roster -->
 			<div class="w3-container" id="roster">
 				<div>
 					<h2>Staff Roster</h2>
@@ -280,7 +278,7 @@
 				</div>
 			</div>
 
-			<!-- Build footer -->
+			<!-- Footer -->
 			<footer
 				class="w3-container w3-brown w3-center w3-small w3-padding-16 w3-border-top"
 			>
