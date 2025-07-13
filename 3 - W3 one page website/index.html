@@ -18,7 +18,7 @@
 
 	<body>
 		<!-- Put whole site in a padded 980px width container (W3-content)-->
-		<div class="w3-content">
+		<div class="w3-container">
 			<!-- Header -->
 			<header class="w3-container" id="header">
 				<!-- Left: Header text (2/3 width) -->
@@ -95,14 +95,14 @@
 						type="text"
 						class="w3-input w3-border"
 						style="display: inline-block; width: 60%"
-						placeholder="Search..."
+						placeholder="Search here..."
 					/>
 				</div>
 			</nav>
 
 			<!-- Services-->
 			<div class="w3-container" id="services">
-				<div>
+				<div class="w3-centered">
 					<h2>Services</h2>
 					<p>
 						Snazzy Dog Grooming offers a wide range of services to keep your pet
@@ -111,21 +111,20 @@
 				</div>
 				<div>
 					<!-- Services info is contained within a table with invisible borders -->
-					<table>
+					<table class="w3-table w3-centered">
 						<tr>
-							<th colspan="3" class="section-heading">
-								<span>Standard Services</span>
-								<hr />
+							<th colspan="3">
+								<span><h3>Standard Services</h3></span>
 							</th>
 						</tr>
 						<tr>
 							<!-- Services are in bold (class="service-title") -->
-							<td class="service-title">Bath and brush</td>
+							<th>Bath and brush</th>
 							<td>Shampoo, blow-dry, brush-out and nail trim</td>
 							<td>$25–$50</td>
 						</tr>
 						<tr>
-							<td class="service-title">Haircut</td>
+							<th>Haircut</th>
 							<td>
 								Bath, blow-dry, haircut (based on breed standard or owner's
 								preference) and nail trim
@@ -133,67 +132,71 @@
 							<td>$45–$85</td>
 						</tr>
 						<tr>
-							<td class="service-title">Nail trim</td>
+							<th>Nail trim</th>
 							<td>Trim nails and, in some cases, filing</td>
 							<td>$10–$20</td>
 						</tr>
 						<tr>
-							<td class="service-title">Ear cleaning</td>
+							<th>Ear cleaning</th>
 							<td>Gentle cleaning of ears to remove wax and debris</td>
 							<td>$10–$15</td>
 						</tr>
 						<tr>
-							<td class="service-title">Teeth brushing</td>
+							<th>Teeth brushing</th>
 							<td>Brushing with pet-safe toothpaste</td>
 							<td>$10–$15</td>
 						</tr>
 						<tr>
-							<td class="service-title">Express service</td>
+							<th>Express service</th>
 							<td>For dogs that need minimal grooming or a quick touch-up</td>
 							<td>$15–$25<br />(in addition)</td>
 						</tr>
 						<tr>
-							<td class="service-title">Medicated bath</td>
+							<th>Medicated bath</th>
 							<td>For pets with skin conditions requiring special shampoo.</td>
 							<td>$20–$40<br />(in addition)</td>
 						</tr>
 						<tr>
-							<td class="service-title">Special-breed cuts</td>
+							<th>Special-breed cuts</th>
 							<td>
 								Breed-specific cuts or styling based on customer preference
 							</td>
 							<td>Quoted after consultation</td>
 						</tr>
+						<th colspan="3">
+							<span><hr /></span>
+						</th>
 						<tr>
 							<!-- New sections are introduced with a centered heading and horizontal rule -->
-							<th colspan="3" class="section-heading">
-								<span>Treatments</span>
-								<hr />
+							<th colspan="3">
+								<span><h3>Treatments</h3></span>
 							</th>
 						</tr>
 						<tr>
-							<td class="service-title">De-shedding treatment</td>
+							<th>De-shedding treatment</th>
 							<td>Special shampoo and undercoat removal</td>
 							<td>$20–$40 <br />(in addition)</td>
 						</tr>
 						<tr>
-							<td class="service-title">Flea and tick treatment</td>
+							<th>Flea and tick treatment</tthd>
 							<td>Shampoo and preventative treatment</td>
 							<td>$15–$30</td>
 						</tr>
+						<th colspan="3">
+							<span><hr /></span>
+						</th>
 						<tr>
-							<th colspan="3" class="section-heading">
-								<span>Packages</span>
-								<hr />
+							<th colspan="3">
+								<span><h3>Packages</h3></span>
 							</th>
 						</tr>
 						<tr>
-							<td class="service-title">Puppy package</td>
+							<th>Puppy package</th>
 							<td>Introductory grooming services tailored for puppies</td>
 							<td>$30–$60</td>
 						</tr>
 						<tr>
-							<td class="service-title">Senior dog package</td>
+							<th>Senior dog package</th>
 							<td>
 								Grooming services tailored for older dogs, often with special
 								handling and care
@@ -201,7 +204,7 @@
 							<td>$40–$80</td>
 						</tr>
 						<tr>
-							<td class="service-title">Full grooming package</td>
+							<th>Full grooming package</th>
 							<td>
 								Comprehensive grooming service, including bath, haircut, teeth
 								brushing, nail trim and ear cleaning
@@ -209,49 +212,43 @@
 							<td>$60–$120</td>
 						</tr>
 						<tr>
-							<td class="service-title">Spa package</td>
+							<th>Spa package</th>
 							<td>
 								Bath, haircut, teeth brushing, nail trim and sometimes special
 								scents or conditioners
 							</td>
 							<td>$75–$150</td>
 						</tr>
+							<th colspan="3">
+								<span></span>
+						</th>
 					</table>
 				</div>
 			</div>
 
 			<!-- Booking -->
 			<div class="w3-container" id="booking">
-				<div>
+				<div class="w3-centered">
 					<h2>Request a booking</h2>
 					<p>
 						Enter your details, and we will be in touch to confirm your booking.
 					</p>
-					<!-- Form has a label, then a field to enter relevant information -->
-					<form action="/request_booking.php" class="booking-form">
+				</div>
+
+				<!-- Center the form and limit its width -->
+				<div class="w3-container" style="max-width: 500px; margin: auto;">
+					<form action="/request_booking.php">
 						<label for="owner_name">Owner's name:</label>
-						<input
-							type="text"
-							id="owner_name"
-							name="owner_name"
-							placeholder="Snoop Dogg"
-						/><br />
+						<input class="w3-input w3-margin-bottom" type="text" id="owner_name" name="owner_name" placeholder="Snoop Dogg" />
+
 						<label for="owner_email">Email address:</label>
-						<input
-							type="text"
-							id="owner_email"
-							name="owner_email"
-							placeholder="me@gmail.com"
-						/><br />
+						<input class="w3-input w3-margin-bottom" type="text" id="owner_email" name="owner_email" placeholder="me@gmail.com" />
+
 						<label for="dog_name">Dog's name:</label>
-						<input
-							type="text"
-							id="dog_name"
-							name="dog_name"
-							placeholder="Rex"
-						/><br />
+						<input class="w3-input w3-margin-bottom" type="text" id="dog_name" name="dog_name" placeholder="Rex" />
+
 						<label for="dog_breed">Breed:</label>
-						<select id="breed" name="dog_breed">
+						<select class="w3-select w3-margin-bottom" id="breed" name="dog_breed">
 							<option value="labrador">Labrador Retriever</option>
 							<option value="germanshepherd">German Shepherd</option>
 							<option value="goldenretriever">Golden Retriever</option>
@@ -262,28 +259,27 @@
 							<option value="dachshund">Dachshund</option>
 							<option value="siberianhusky">Siberian Husky</option>
 							<option value="boxer">Boxer</option>
-							<option value="other">Other</option></select
-						><br />
+							<option value="other">Other</option>
+						</select>
+
 						<label for="dog_age">Dog's age:</label>
-						<input
-							type="number"
-							id="dog_age"
-							name="dog_age"
-							placeholder="5"
-						/><br />
+						<input class="w3-input w3-margin-bottom" type="number" id="dog_age" name="dog_age" placeholder="5" />
+
 						<label for="owner_notes">Additional Notes:</label>
-						<textarea
-							id="owner_notes"
-							name="owner_notes"
-							maxlength="300"
-							rows="4"
-							placeholder="Enter any extra details here (max 300 characters)"
-						></textarea>
-						<br />
-						<input type="submit" value="Submit" />
+						<textarea class="w3-input w3-margin-bottom" id="owner_notes" name="owner_notes" maxlength="300" rows="4" placeholder="Enter any extra details here (max 300 characters)"></textarea>
+
+						<div class="w3-center">
+							<input
+								class="w3-button w3-brown w3-margin-bottom"
+								type="submit"
+								value="Submit"
+							/>
+						</div>
+
 					</form>
 				</div>
 			</div>
+
 
 			<!-- Navbar -->
 			<nav class="w3-bar w3-brown">
@@ -308,7 +304,7 @@
 						type="text"
 						class="w3-input w3-border"
 						style="display: inline-block; width: 60%"
-						placeholder="Search..."
+						placeholder="Search here..."
 					/>
 				</div>
 			</nav>
@@ -475,7 +471,7 @@
 						type="text"
 						class="w3-input w3-border"
 						style="display: inline-block; width: 60%"
-						placeholder="Search..."
+						placeholder="Search here..."
 					/>
 				</div>
 			</nav>
