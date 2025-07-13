@@ -31,6 +31,13 @@ h4 {
 	text-align: center;
 }
 
+p,
+li,
+th,
+td {
+	font-family: "Lato", sans-serif;
+}
+
 h4 {
 	font-size: medium;
 }
@@ -43,10 +50,9 @@ p {
 	text-align: center;
 }
 
-p,
-th,
-td {
-	font-family: "Lato", sans-serif;
+p + ul {
+	margin-top: 0;
+	font-size: inherit;
 }
 
 th {
