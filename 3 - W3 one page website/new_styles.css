@@ -9,6 +9,17 @@ html {
 	box-sizing: border-box;
 }
 
+/* Responsive font size makes the <h1> smaller on a smaller screen */
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.2em;
+	}
+	.column {
+		width: 100%;
+		float: none;
+	}
+}
+
 #header,
 #services,
 #gallery,
@@ -57,4 +68,38 @@ p + ul {
 
 th {
 	font-weight: bold;
+}
+
+/* Wrap all columns in rows */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Default: 4 columns */
+.column {
+	float: left;
+	width: 25%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/* Images sizing */
+.photo_gallery img {
+	width: 100%;
+	max-width: 150px;
+	max-height: 150px;
+	object-fit: cover;
+	border: 1px solid #ccc;
+	padding: 4px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Responsive: 2 per row on smaller screens */
+@media screen and (max-width: 768px) {
+	.column {
+		width: 50%;
+	}
 }

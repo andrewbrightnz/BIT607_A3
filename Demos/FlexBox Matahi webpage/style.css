@@ -44,8 +44,6 @@
 .column {
 	float: left;
 	width: 25%;
-	padding: 15px;
-	background-color: #e6ffff;
 }
 /* Clear floats after the columns */
 .row:after {
