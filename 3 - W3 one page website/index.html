@@ -280,7 +280,6 @@
 				</div>
 			</div>
 
-
 			<!-- Navbar -->
 			<nav class="w3-bar w3-brown">
 				<!-- Left side nav links -->
@@ -404,48 +403,40 @@
 			</div>
 
 			<!-- Contact -->
-			<div class="main-light" id="contact">
-				<h2>Contact us</h2>
-				<div>
-					<p>Fred and Wilma Bedrock</p>
-					<p>Phone: 021-123-4567</p>
-					<p>Address: 89 Lake Domain Drive, Frankton, Hamilton, NEW ZEALAND</p>
+			<div class="w3-container" id="contact">
+				<div class="w3-centered">
+					<h2>Contact us</h2>
+					<div>
+						<p>Fred and Wilma Bedrock</p>
+						<p>Phone: 021-123-4567</p>
+						<p>Address: 89 Lake Domain Drive, Frankton, Hamilton, NEW ZEALAND</p>
+					</div>
+					<h2>Or email us through this form:</h2>
+					<div class="w3-container" style="max-width: 500px; margin: auto;">
+						<form action="/contact_us.php">
+						<label for="contact_name"> Name:</label>
+						<input class="w3-input w3-margin-bottom" type="text" id="contact_name" name="contact_name" placeholder="Snoop Dogg" />
+
+						<label for="contact_email">Email address:</label>
+						<input class="w3-input w3-margin-bottom" type="text" id="contact_email" name="contact_email" placeholder="me@gmail.com" />
+
+						<label for="contact_phone">Phone number:</label>
+						<input class="w3-input w3-margin-bottom" type="text" id="contact_phone" name="contact_phone" placeholder="123-456-7890" />
+
+						<label for="contact_notes">Additional Notes:</label>
+						<textarea class="w3-input w3-margin-bottom" id="contact_notes" name="contact_notes" maxlength="500" rows="4" placeholder="Enter your question or comment here (max 500 characters)"></textarea>
+
+						<div class="w3-center">
+							<input
+								class="w3-button w3-brown w3-margin-bottom"
+								type="submit"
+								value="Submit"
+							/>
+						</div>
+
+					</form>
+					</div>
 				</div>
-				<h2>Or email us through this form.</h2>
-				<!-- Form has a label, then a field to enter relevant information -->
-				<form action="/contact_us.php" class="booking-form">
-					<label for="contact_name">Name:</label>
-					<input
-						type="text"
-						id="contact_name"
-						name="contact_name"
-						placeholder="Snoop Dogg"
-					/><br />
-					<label for="contact_email">Email address:</label>
-					<input
-						type="text"
-						id="contact_email"
-						name="contact"
-						placeholder="me@gmail.com"
-					/><br />
-					<label for="contact_phone">Phone number:</label>
-					<input
-						type="text"
-						id="contact_phone"
-						name="contact_phone"
-						placeholder="123-456-7890"
-					/><br />
-					<label for="contact_enquiry">Write your question here:</label>
-					<textarea
-						id="contact_enquiry"
-						name="contact_enquiry"
-						maxlength="300"
-						rows="4"
-						placeholder="How can I pay? What if I need to cancel a booking? (max 300 characters)"
-					></textarea>
-					<br />
-					<input type="submit" value="Submit" />
-				</form>
 			</div>
 
 			<!-- Navbar -->
