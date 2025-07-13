@@ -73,24 +73,26 @@
 			</header>
 
 			<!-- Navbar -->
-			<nav class="w3-bar w3-brown">
+			<nav class="w3-bar w3-brown" id="navbar">
 				<!-- Left side nav links -->
 				<div class="w3-bar-item" style="width: 66%">
-					<a href="../index.html#home" class="w3-bar-item w3-button">Home</a>
+					<a href="../index.html#home" class="w3-bar-item w3-button"
+						><h4>Home</h4></a
+					>
 					<a href="../index.html#services" class="w3-bar-item w3-button"
-						>Services</a
+						><h4>Services</h4></a
 					>
 					<a href="../index.html#booking" class="w3-bar-item w3-button"
-						>Booking</a
+						><h4>Booking</h4></a
 					>
 					<a href="../index.html#gallery" class="w3-bar-item w3-button"
-						>Gallery</a
+						><h4>Gallery</h4></a
 					>
 					<a href="../index.html#contact" class="w3-bar-item w3-button"
-						>Contact</a
+						><h4>Contact</h4></a
 					>
 					<a href="../index.html#location" class="w3-bar-item w3-button"
-						>Location</a
+						><h4>Location</h4></a
 					>
 				</div>
 
@@ -108,7 +110,7 @@
 
 			<!-- Roster -->
 			<div class="w3-container" id="roster">
-				<div>
+				<div class="w3-centered">
 					<h2>Staff Roster</h2>
 					<p>Below are staff rosters for the next three weeks.</p>
 					<p>
@@ -118,7 +120,8 @@
 				</div>
 				<div>
 					<!-- Services info is contained within a table with invisible borders -->
-					<table>
+					<table class="w3-table w3-centered">
+						<!-- Week 1 -->
 						<tr>
 							<th colspan="8" class="section-heading">
 								<span>Monday 30 June to Sunday 6 July 2025</span>
@@ -126,18 +129,17 @@
 							</th>
 						</tr>
 						<tr>
-							<!-- Roles are in bold (class="service-title") -->
-							<td class="service-title"></td>
-							<td>Monday 30</td>
-							<td>Tuesday 1</td>
-							<td>Wednesday 2</td>
-							<td>Thursday 3</td>
-							<td>Friday 4</td>
-							<td>Saturday 5</td>
-							<td>Sunday 6</td>
+							<th></th>
+							<th>Monday 30</th>
+							<th>Tuesday 1</th>
+							<th>Wednesday 2</th>
+							<th>Thursday 3</th>
+							<th>Friday 4</th>
+							<th>Saturday 5</th>
+							<th>Sunday 6</th>
 						</tr>
 						<tr>
-							<td class="service-title">Manager</td>
+							<th>Manager</th>
 							<td>Fred</td>
 							<td>Fred</td>
 							<td>Fred</td>
@@ -146,9 +148,8 @@
 							<td>Wilma</td>
 							<td>Closed</td>
 						</tr>
-
 						<tr>
-							<td class="service-title">Groomer 1</td>
+							<th>Groomer 1</th>
 							<td>Barney</td>
 							<td>Barney</td>
 							<td>Barney</td>
@@ -158,7 +159,7 @@
 							<td>Closed</td>
 						</tr>
 						<tr>
-							<td class="service-title">Groomer 2</td>
+							<th>Groomer 2</th>
 							<td></td>
 							<td>Betty</td>
 							<td>Betty</td>
@@ -172,6 +173,7 @@
 								<span></span>
 							</td>
 						</tr>
+						<!-- Week 2 -->
 						<tr>
 							<th colspan="8" class="section-heading">
 								<span>Monday 7 to Sunday 13 July 2025</span>
@@ -179,18 +181,17 @@
 							</th>
 						</tr>
 						<tr>
-							<!-- Roles are in bold (class="service-title") -->
-							<td class="service-title"></td>
-							<td>Monday 7</td>
-							<td>Tuesday 8</td>
-							<td>Wednesday 9</td>
-							<td>Thursday 10</td>
-							<td>Friday 11</td>
-							<td>Saturday 12</td>
-							<td>Sunday 13</td>
+							<th></th>
+							<th>Monday 7</th>
+							<th>Tuesday 8</th>
+							<th>Wednesday 9</th>
+							<th>Thursday 10</th>
+							<th>Friday 11</th>
+							<th>Saturday 12</th>
+							<th>Sunday 13</th>
 						</tr>
 						<tr>
-							<td class="service-title">Manager</td>
+							<th>Manager</th>
 							<td>Wilma</td>
 							<td>Wilma</td>
 							<td>Wilma</td>
@@ -199,9 +200,8 @@
 							<td>Fred</td>
 							<td>Closed</td>
 						</tr>
-
 						<tr>
-							<td class="service-title">Groomer 1</td>
+							<th>Groomer 1</th>
 							<td>Betty</td>
 							<td>Betty</td>
 							<td>Betty</td>
@@ -211,7 +211,7 @@
 							<td>Closed</td>
 						</tr>
 						<tr>
-							<td class="service-title">Groomer 2</td>
+							<th>Groomer 2</th>
 							<td></td>
 							<td>Barney</td>
 							<td>Barney</td>
@@ -225,7 +225,7 @@
 								<span></span>
 							</td>
 						</tr>
-
+						<!-- Week 3 -->
 						<tr>
 							<th colspan="8" class="section-heading">
 								<span>Monday 14 to Sunday 20 July 2025</span>
@@ -233,18 +233,17 @@
 							</th>
 						</tr>
 						<tr>
-							<!-- Roles are in bold (class="service-title") -->
-							<td class="service-title"></td>
-							<td>Monday 14</td>
-							<td>Tuesday 15</td>
-							<td>Wednesday 16</td>
-							<td>Thursday 17</td>
-							<td>Friday 18</td>
-							<td>Saturday 19</td>
-							<td>Sunday 20</td>
+							<th></th>
+							<th>Monday 14</th>
+							<th>Tuesday 15</th>
+							<th>Wednesday 16</th>
+							<th>Thursday 17</th>
+							<th>Friday 18</th>
+							<th>Saturday 19</th>
+							<th>Sunday 20</th>
 						</tr>
 						<tr>
-							<td class="service-title">Manager</td>
+							<th>Manager</th>
 							<td>Fred</td>
 							<td>Fred</td>
 							<td>Fred</td>
@@ -253,9 +252,8 @@
 							<td>Wilma</td>
 							<td>Closed</td>
 						</tr>
-
 						<tr>
-							<td class="service-title">Groomer 1</td>
+							<th>Groomer 1</th>
 							<td>Barney</td>
 							<td>Barney</td>
 							<td>Barney</td>
@@ -265,7 +263,7 @@
 							<td>Closed</td>
 						</tr>
 						<tr>
-							<td class="service-title">Groomer 2</td>
+							<th>Groomer 2</th>
 							<td></td>
 							<td>Betty</td>
 							<td>Betty</td>
@@ -289,8 +287,8 @@
 				<p>&copy; 2025 Snazzy Dog Grooming</p>
 
 				<div class="w3-row">
-					<div class="w3-half" style="text-align: right">
-						<p>
+					<div class="w3-half">
+						<p style="text-align: right">
 							View our
 							<a href="../index.html#privacy" class="w3-hover-text-yellow"
 								>Privacy policy</a
@@ -298,8 +296,8 @@
 							&nbsp;|&nbsp;
 						</p>
 					</div>
-					<div class="w3-half" style="text-align: left">
-						<p>
+					<div class="w3-half">
+						<p style="text-align: left">
 							<a href="#roster" class="w3-hover-text-yellow">Staff roster</a>
 							(login required)
 						</p>
