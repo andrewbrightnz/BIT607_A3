@@ -60,12 +60,9 @@ nav.w3-bar {
 	height: 100%;
 }
 
-a:hover {
-	color: yellow;
-}
-
 /* Button text changes to yellow and background disappears when hovered over */
-.w3-button[type="submit"]:hover {
+a:hover,
+.w3-button:hover {
 	color: yellow !important;
 	background-color: transparent !important;
 }
