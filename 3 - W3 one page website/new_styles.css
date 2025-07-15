@@ -35,6 +35,35 @@ html {
 	background-color: #d0b49f;
 }
 
+.w3-bar .w3-button:hover {
+	color: yellow !important;
+	background-color: transparent !important;
+}
+
+nav.w3-bar {
+	height: 60px; /* adjust to your liking */
+	align-items: center;
+}
+
+.w3-bar .w3-bar-item {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.w3-bar {
+	display: flex;
+	align-items: center;
+}
+
+.w3-bar-item {
+	align-items: center;
+}
+
+a:hover {
+	color: yellow;
+}
+
 h1,
 h2,
 h3,
@@ -98,6 +127,8 @@ th {
 	margin: 0 auto;
 }
 
+.footer a {
+}
 /* Responsive: 2 per row on smaller screens */
 @media screen and (max-width: 768px) {
 	.column {
