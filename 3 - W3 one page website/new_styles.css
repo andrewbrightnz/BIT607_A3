@@ -9,7 +9,7 @@ html {
 	box-sizing: border-box;
 }
 
-/* Responsive font size makes the <h1> smaller on a smaller screen */
+/* Responsive font sizing makes the <h1> smaller on a smaller screen */
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 1.2em;
@@ -20,6 +20,7 @@ html {
 	}
 }
 
+/* Set these sections all to a light brown background */
 #header,
 #services,
 #gallery,
@@ -28,6 +29,7 @@ html {
 	background-color: #e4d4c8;
 }
 
+/* Set these sections all to a medium brown background */
 #home,
 #booking,
 #contact,
@@ -35,35 +37,35 @@ html {
 	background-color: #d0b49f;
 }
 
-.w3-bar .w3-button:hover {
-	color: yellow !important;
-	background-color: transparent !important;
-}
-
+/* Set height of navbar */
 nav.w3-bar {
-	height: 60px; /* adjust to your liking */
+	height: 60px;
 	align-items: center;
 }
 
-.w3-bar .w3-bar-item {
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
+/* Vertically center navbar links and search box */
 .w3-bar {
 	display: flex;
 	align-items: center;
 }
 
-.w3-bar-item {
+.w3-bar .w3-bar-item {
+	display: flex;
 	align-items: center;
+	height: 100%;
 }
 
 a:hover {
 	color: yellow;
 }
 
+/* Button text changes to yellow and background disappears when hovered over */
+.w3-button[type="submit"]:hover {
+	color: yellow !important;
+	background-color: transparent !important;
+}
+
+/* Set font for headings */
 h1,
 h2,
 h3,
@@ -72,6 +74,7 @@ h4 {
 	text-align: center;
 }
 
+/* Set font for body text */
 p,
 li,
 th,
@@ -87,13 +90,21 @@ h2 {
 	padding-top: 25px;
 }
 
+/* Center paragraph text */
 p {
 	text-align: center;
 }
 
+/* Stop list items dropping too far down under paragraph text */
 p + ul {
 	margin-top: 0;
 	font-size: inherit;
+}
+
+/* Left align list items */
+ul {
+	display: inline-block;
+	text-align: left;
 }
 
 th {
@@ -115,7 +126,7 @@ th {
 	box-sizing: border-box;
 }
 
-/* Images sizing */
+/* Gallery images sizing and styling */
 .photo_gallery img {
 	width: 100%;
 	max-width: 150px;
@@ -127,8 +138,6 @@ th {
 	margin: 0 auto;
 }
 
-.footer a {
-}
 /* Responsive: 2 per row on smaller screens */
 @media screen and (max-width: 768px) {
 	.column {
